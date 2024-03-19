@@ -1,0 +1,169 @@
+@import "./css_reset";
+
+body {
+  font-family: sans-serif;
+  background-color: #c5bcb5;
+  line-height: 1.5;
+}
+section {
+  margin: 20px 0;
+}
+hr {
+  color: #c5bcb5;
+}
+ul {
+  display: flex;
+  width: 800px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #c5bcb5;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #00728c;
+    font-size: 20px;
+    color: #c5bcb5;
+  }
+  .li1 {
+    background-color: #00728c;
+  }
+  .li2 {
+    background-color: #0a95b4;
+  }
+  .li3 {
+    background-color: #13accf;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: #00728c;
+  text-align: center;
+  h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #c5bcb5;
+  }
+  h3 {
+    margin: 20px 0;
+    color: #c5bcb5;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.line {
+  width: 1000px;
+  height: 1px;
+  background-color: #c5bcb5;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.column-reverse {
+  flex-direction: column-reverse;
+}
+.no-wrap {
+  gap: 10px;
+}
+.wrap {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+.justify {
+  ul {
+    padding: 10px 0;
+  }
+  .start {
+    justify-content: start;
+  }
+  .end {
+    justify-content: end;
+  }
+  .center {
+    justify-content: center;
+  }
+  .between {
+    justify-content: space-between;
+  }
+  .around {
+    justify-content: space-around;
+  }
+  .evenly {
+    justify-content: space-evenly;
+  }
+}
+.align {
+  ul {
+    height: 200px;
+    padding: 0;
+  }
+  .start {
+    align-items: flex-start;
+  }
+  .end {
+    align-items: flex-end;
+  }
+  .center {
+    align-items: center;
+  }
+  .stretch {
+    align-items: stretch;
+    li {
+      height: 200px;
+    }
+  }
+  .baseline {
+    align-items: baseline;
+    .li2 {
+      font-size: 28px;
+    }
+    .li3 {
+      font-size: 36px;
+    }
+  }
+}
+.self {
+  align-self: center;
+}
+.child {
+  .line {
+    margin-bottom: 20px;
+  }
+}
+.order1 {
+  order: -1;
+}
+.order2 {
+  order: 1;
+}
+.grow {
+  margin-bottom: 10px;
+  .li1 {
+    flex-grow: 1;
+  }
+  .li2 {
+    flex-grow: 2;
+  }
+  .li3 {
+    flex-grow: 3;
+  }
+}
